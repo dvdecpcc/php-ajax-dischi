@@ -5,4 +5,43 @@
     font-family: 'Roboto', sans-serif;
 }
 
-img{max-width: 50px;}
+header{
+    height: 60px;
+    background-color: rgb(35, 44, 54);
+}
+
+header img{
+    max-width: 60px;
+    padding: 15px;
+}
+
+main{background-color: rgb(23, 33, 45);}
+
+.albumWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.myAlbum{
+    background-color:  rgb(35, 44, 54);
+    text-align: center;
+    width: calc(100% / 4);
+    height: 300px;
+    margin: 30px;
+}
+
+.myAlbum img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.myAlbum h2{
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.myAlbum p{color: rgb(82, 85, 89);}
+

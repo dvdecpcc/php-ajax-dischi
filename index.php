@@ -20,7 +20,7 @@
                 require __DIR__ . "/database.php";
 
                 foreach($database as $album){
-                    echo "<div class='myAlbums'>";
+                    echo "<div class='myAlbum'>";
                     echo "<img src='" . $album['poster'] . "'alt='" . $album['title'] . "'>";
                     echo "<h2 class='albumTitle'>" . $album['title'] . "</h2> ";
                     echo "<p class= 'infos'>" . $album['author'] . "</p>";
