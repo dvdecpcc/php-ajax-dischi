@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Music Playlist</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="Spotify Logo">
+        </header>
+        <main>
+            <div class="albumWrapper">
+                <div class="myAlbum" v-for="album in albums">
+                    <img :src="album.poster" :alt="album.title">
+                    <h2 class="albumTitle">{{album.title}}</h2>
+                    <p class="infos">{{album.author}}</p>
+                    <p class="infos">{{album.year}}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
